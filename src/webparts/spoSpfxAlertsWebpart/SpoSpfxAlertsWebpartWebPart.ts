@@ -18,7 +18,6 @@ export interface ISpoSpfxAlertsWebpartWebPartProps {
 
 export default class SpoSpfxAlertsWebpartWebPart extends BaseClientSideWebPart<ISpoSpfxAlertsWebpartWebPartProps> {
 
-  private _isDarkTheme: boolean = false;
   private _environmentMessage: string = '';
 
   public render(): void {
@@ -26,10 +25,7 @@ export default class SpoSpfxAlertsWebpartWebPart extends BaseClientSideWebPart<I
       SpoSpfxAlertsWebpart,
       {
         description: this.properties.description,
-        isDarkTheme: this._isDarkTheme,
         environmentMessage: this._environmentMessage,
-        hasTeamsContext: !!this.context.sdks.microsoftTeams,
-        userDisplayName: this.context.pageContext.user.displayName
       }
     );
 
@@ -75,7 +71,6 @@ export default class SpoSpfxAlertsWebpartWebPart extends BaseClientSideWebPart<I
       return;
     }
 
-    this._isDarkTheme = !!currentTheme.isInverted;
     const {
       semanticColors
     } = currentTheme;

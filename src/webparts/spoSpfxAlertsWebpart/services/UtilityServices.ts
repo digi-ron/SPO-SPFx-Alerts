@@ -1,7 +1,7 @@
 import { WebPartContext } from '@microsoft/sp-webpart-base';
 import { SPFI, SPFx, spfi } from '@pnp/sp/presets/all';
 export default class UtilityServices {
-    public static sp: SPFI;
+    private static sp: SPFI;
     public static webPartContext: unknown;
 
     public static GetPnP(context?: WebPartContext): SPFI {
