@@ -11,6 +11,7 @@ import { IReadonlyTheme } from '@microsoft/sp-component-base';
 import * as strings from 'SpoSpfxAlertsWebpartWebPartStrings';
 import SpoSpfxAlertsWebpart from './components/SpoSpfxAlertsWebpart';
 import { ISpoSpfxAlertsWebpartProps } from './components/ISpoSpfxAlertsWebpartProps';
+import UtilityServices from './services/UtilityServices';
 
 export interface ISpoSpfxAlertsWebpartWebPartProps {
   description: string;
@@ -35,6 +36,7 @@ export default class SpoSpfxAlertsWebpartWebPart extends BaseClientSideWebPart<I
   protected onInit(): Promise<void> {
     return this._getEnvironmentMessage().then(message => {
       this._environmentMessage = message;
+      UtilityServices.GetPnP(this.context)
     });
   }
 
