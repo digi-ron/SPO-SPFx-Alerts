@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "spo-spfx-alerts-webpart-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/spoSpfxAlertsWebpart/SpoSpfxAlertsWebpartWebPart.js",
+          "manifest": "./src/webparts/spoSpfxAlertsWebpart/SpoSpfxAlertsWebpartWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "SpoSpfxAlertsWebpartWebPartStrings": "lib/webparts/spoSpfxAlertsWebpart/loc/{locale}.js"
+  }
+}
