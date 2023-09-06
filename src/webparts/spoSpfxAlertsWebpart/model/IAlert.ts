@@ -1,6 +1,7 @@
 export default interface IAlert {
-    alertText: string
-    URL: string
+    alertTitle: string
+    alertContent: string
+    URL: {Url: string, Description: string}
     severity: SeverityLevel
 }
 
