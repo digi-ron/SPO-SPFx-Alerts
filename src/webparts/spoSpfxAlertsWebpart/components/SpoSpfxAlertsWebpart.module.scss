@@ -9,3 +9,12 @@
     font-family: $ms-font-family-fallbacks;
   }
 }
+
+.alert {
+  color: "[theme:bodyText, default: #323130]"
+}
+
+.warning {
+  fill: #827700;
+  background-color: #827700;
+}
