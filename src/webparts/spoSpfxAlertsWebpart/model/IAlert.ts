@@ -1,14 +1,13 @@
-export default interface IAlert {
+export interface IAlert {
     alertTitle: string
     alertContent: string
     URL: {Url: string, Description: string}
-    severity: SeverityLevel
+    severity: ESeverityLevel
 }
 
-enum SeverityLevel {
-    Information,
-    Good,
-    Warning,
-    Critical,
-    Other
+export enum ESeverityLevel {
+    Information = "Information",
+    Good = "Good",
+    Warning = "Warning",
+    Critical = "Critical"
 }

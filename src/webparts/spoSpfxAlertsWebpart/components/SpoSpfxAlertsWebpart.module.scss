@@ -11,10 +11,47 @@
 }
 
 .alert {
-  color: "[theme:bodyText, default: #323130]"
+  color: #FFFFFF;
 }
 
 .warning {
   fill: #827700;
   background-color: #827700;
+  color: #FFFFFF;
+  padding: 5px;
+  margin: 10px;
+}
+
+.good {
+  fill: #007D0C;
+  background-color: #007D0C;
+  color: #FFFFFF;
+  padding: 5px;
+  margin: 10px;
+}
+
+.error {
+  fill: #d40004;
+  background-color: #d40004;
+  color: #FFFFFF;
+  padding: 5px;
+  margin: 10px;
+}
+
+.information {
+  fill: "[theme: bodyBackground, default: #FFFFFF]";
+  background-color: "[theme: bodyBackground, default: #FFFFFF]";
+  color: "[theme:bodyTextChecked, default: #323130]" !important;
+  padding: 5px;
+  margin: 10px;
+}
+
+.alertTitle {
+  text-decoration: underline;
+  font-weight:bold;
+}
+
+.link {
+  color: #FFFFFF;
+  font-weight: bolder;
 }

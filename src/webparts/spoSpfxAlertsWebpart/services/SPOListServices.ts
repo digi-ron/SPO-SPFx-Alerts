@@ -2,7 +2,7 @@ import UtilityServices from "./UtilityServices";
 import * as Config from '../Config'
 import IColumnInformation from "../model/IRequiredColumnInformation";
 import { IFields } from "@pnp/sp/fields";
-import IAlert from "../model/IAlert";
+import { IAlert } from "../model/IAlert";
 
 export default class SPOListService {
     public static async GetListItems(listName: string = Config.LIBNAME, fields: IColumnInformation[] = Config.REQFIELDS): Promise<IAlert[]> {
