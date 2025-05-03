@@ -1,5 +1,9 @@
 # digiron-navigation
 
+## NOTE - 3rd May 2025
+
+This project is archived indefinitely due to not being maintained. Use this code at your own risk!
+
 ## Summary
 
 Simple Alerts solution which uses a single list for configuration and current alerts
